@@ -7,15 +7,14 @@ def base_algorithm(number):
 	if number in done:
 		return done[number]
 	if number % 2 == 0:
-		s = base_algorithm(number / 2)
+		s = base_algorithm(number >> 1)
 	else:
 		s = base_algorithm(number * 3 + 1)
-	done[number] = s + 1	
+	done[number] = s + 1
 	return done[number]
 
 def calc_biggest_cycle(first_number, second_number):
 	max_sum = 0
-	curr_sum = 0
 	if first_number > second_number:
 		aux = first_number
 		first_number  = second_number
