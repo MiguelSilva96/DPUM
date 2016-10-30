@@ -4,7 +4,7 @@ import fileinput
 	Problem:
 		- Finding maximum sum from top
 		to bottom of a triangle of ints
-	It's problem number 18 from project euler
+	It's problem number 67 from project euler
 '''
 
 l_str = list()
